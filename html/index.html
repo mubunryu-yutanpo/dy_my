@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/tiger.png">
+    <!-- reset.css modern-css-reset -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../js/index.js">
+    <title>自己紹介</title>
+</head>
+<body>
+
+<!-- header -->
+<header class="p-header">
+    <h1 class="p-logo">自己紹介</h1>
+
+    <!-- SP用 -->
+    <div class="p-header__menu">
+        <button class="p-header__menu--button on js-button--on"><i class="fa-solid fa-bars"></i></button>
+        <button class="p-header__menu--button js-button--off"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- nav -->
+    <nav class="p-nav js-trigger">
+        <ul class="p-nav__list">
+            <li class="p-nav__list--item"><a href="#staff" class="p-nav__list--link">STAFF</a></li>
+            <li class="p-nav__list--item"><a href="#skill" class="p-nav__list--link">SKILL</a></li>
+            <li class="p-nav__list--item"><a href="#access" class="p-nav__list--link">ACCESS</a><li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<!-- main -->
+<main id="main" class="p-main">
+
+
+    <!--================= hero ================= -->
+
+    <section class="p-hero c-section">
+        <h2 class="p-hero__title">Let's enjoy our work!</h2>
+        <h3 class="p-hero__subtitle">楽しみながら頑張りましょ！</h3>
+    </section>
+
+
+    <!-- ================= staff ================= -->
+
+    <section id="staff" class="p-staff c-section">
+        <h2 class="p-staff__title c-caption">STAFF</h2>
+        <div class="p-user">
+            <img src="../images/img1.jpg" alt="" class="p-user__image c-image">
+            <div class="p-user__about">
+                <p class="p-staff__user--name c-text c-text--user"><strong>氏名：</strong>古関 友太郎</p>
+                <p class="p-staff__user--age c-text c-text--user"><strong>生年月日：</strong>12月12日（34歳）</p>
+                <p class="p-staff__user--favorite c-text c-text--user"><strong>趣味：</strong>スポーツ・アニメ・ゲーム</p>
+                <p class="p-staff__user--other c-text c-text--user"><strong>その他：</strong>阪神ファンです。和気あいあいとやるのも好きなタイプ。パンの画像に意味はない。</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= skill ================= -->
+
+    <section class="p-skill c-section">
+        <h2 class="p-skill__title c-caption">SKILL</h2>
+
+        <div class="p-skill__container">
+
+            <!-- HTML -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">HTML</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/html.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">HTML</p>
+                </div>
+
+                <p class="p-learned__about">普通に使えます。ただ、フレームワークなどの使用経験はありません。</p>
+            </div>
+
+            <!-- CSS -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">CSS</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/css.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">CSS</p>
+                </div>
+
+                <p class="p-learned__about">極端に凝った物以外は普通に。クラス設計としてFLOCSSを使用していました。</p>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">JavaScript</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/javascript.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">JavaScript</p>
+                </div>
+
+                <p class="p-learned__about">フルスクラッチから学習。バニラ（生の）とjQuery、Vueはある程度。Reactは今後の課題。</p>
+            </div>
+
+            <!-- PHP -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">PHP</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/PHP.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">PHP</p>
+                </div>
+
+                <p class="p-learned__about">フルスクラッチから。オブジェクト指向を用いた簡単なゲームやWEBサービスなどの作成経験あり。</p>
+            </div>
+
+            <!-- vue.js -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">Vue.js</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/vue.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">Vue</p>
+                </div>
+
+                <p class="p-learned__about">jsの中では一番まともに使えます。バージョン的に２系がほぼなので、３系に慣れるのが課題。</p>
+            </div>
+
+            <!-- Laravel -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">Laravel</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/laravel.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">Laravel</p>
+                </div>
+
+                <p class="p-learned__about">ポートフォリオなどで使用。v5.8ならメルカリ的なものは作れます。付随してある程度のSQLも。</p>
+            </div>
+
+            <!-- git -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">git</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/git.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">git</p>
+                </div>
+
+                <p class="p-learned__about">個人開発のバージョン管理でお世話になってるくらい。ブランチだとか深い部分の理解はまだ全然。</p>
+            </div>
+
+            <!-- docker -->
+            <div class="p-learned">
+                <h3 class="p-learned__title">docker</h3>
+
+                <div class="p-learned__image">
+                    <img src="../images/docker.png" alt="" class="p-learned__image--item">
+                    <p class="p-learned__image--lang">docker</p>
+                </div>
+
+                <p class="p-learned__about">Laravel sailの関係でちょっと触れた程度。今後必須になると思うのでこれは特に課題。。</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= access ================= -->
+
+    <section class="c-section p-access">
+        <h2 class="p-skill__title c-caption">ACCESS</h2>
+        <div class="p-access__contents">
+            
+            <!-- sns -->
+            <div class="p-access__contents--sns">
+                <a href="#" class=""><i class="fa-brands fa-facebook fa-fw"></i>Facebookで連絡する</a>
+                <a href="#" class=""><i class="fa-brands fa-x-twitter"></i>Xで連絡する</a>
+            </div>
+
+            <!-- form -->
+            <form action="#" method="post" class="p-form">
+
+                <div class="p-form__wrap c-box">
+                    <label for="name" class="p-form__name--label c-label">*お名前</label>
+                    <input id="name" type="text" class="p-form__name--input c-input" placeholder="お名前を入力してください" required>
+                </div>
+
+                <div class="p-form__wrap c-box">
+                    <label for="email" class="p-form__email--label c-label">*メールアドレス</label>
+                    <input id="email" type="email" class="p-form__email--input c-input" placeholder="メールアドレスを入力してください" required>
+                </div>
+
+                <div class="p-form__wrap c-box">
+                    <label for="about" class="p-form__about--label c-label">*お問合せ内容</label>
+                    <textarea rows="10" cols="30" placeholder="ここにお問い合わせ内容を記入してください" class="p-form__about--textarea c-textarea"></textarea>
+                </div>
+
+                <div class="p-form__wrap c-box">
+                    <input type="submit" class="p-form__submit c-input">
+                </div>
+
+
+
+
+            </form>
+
+            <!-- map -->
+            <div class="p-access__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.481335707271!2d140.4844183760754!3d39.16377697166839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8ee034abc6ae0d%3A0xb1315b14e03716d5!2z5rmv5rKi6aeF!5e0!3m2!1sja!2sjp!4v1705585270208!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<!-- footer -->
+<footer class="p-footer">
+    <p class="p-footer__text">© 2024 nanchatte-web Inc</p>
+</footer>
+<script>
+
+</script>
+</body>
+</html>

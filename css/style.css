@@ -1,0 +1,329 @@
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+汎用
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a,button{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+strong{
+    margin-right: 10px;
+}
+
+.c-section{
+    background: #f4f4f4;
+    box-shadow: 0 0 5px rgb(255 255 226 / 80%) inset;
+    padding: 120px 80px;
+}
+
+.c-caption{
+    text-align: center;
+    border-top: 1.5px solid;
+    border-bottom: 1.5px solid;
+    padding: 20px;
+}
+
+.c-text{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+header
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.p-header{
+    background: rgb(255 255 226 / 80%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 15px;
+    width: 100%;
+    z-index: 5;
+}
+
+.p-logo{
+    color: rgba(32, 5 ,5, .8);
+    font-size: 21px;
+}
+
+.p-header__menu{
+    display: none;
+}
+
+.p-nav__list{
+    color: rgba(32, 5 ,5, .8);;
+    display: flex;
+}
+
+.p-nav__list--item{
+    margin: 0 5px;
+}
+
+.p-nav__list--link{
+    color: rgba(32, 5 ,5, .8);
+    padding: 5px 10px;
+}
+
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+hero
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.p-hero{
+    background-color: #5b5b72;
+    background-blend-mode: hard-light;
+    background-image: url("../images/bread.jpg");
+    background-size: cover;
+    color: #fff;
+    height: 900px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.p-hero__title{
+    font-size: 70px;
+    margin: 0 0 20px;
+    padding-top: 450px;
+}
+
+.p-hero__subtitle{
+    font-size: 50px;
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+staff
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.p-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+}
+
+.p-user__image{
+    border-radius: 100%;
+    box-shadow: 0 0px 8px 0 black;
+    height: 300px;
+    width: 300px;
+}
+
+.p-user__about{
+    margin-left: 60px;
+}
+
+.c-text--user{
+    font-size: 20px;
+}
+
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+skill
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+.p-skill{
+    background: #fff;
+    box-shadow: 0 0 5px #f4f4f4 inset;
+}
+
+
+
+
+
+
+
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+footer
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+.p-footer{
+    background: #181717;
+    color: rgb(255 255 226 / 80%);
+    padding: 5px 15px;
+}
+
+
+/*==============================================================
+================================================================
+
+max-width:1000px
+
+================================================================
+============================================================== */
+
+
+@media screen and (max-width:1000px){
+    .p-hero__title{
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .p-hero__subtitle{
+        font-size: 35px;
+    }
+
+    .p-user__image{
+        height: 200px;
+        width: 200px;
+    }
+
+
+    .p-staff{
+        padding-bottom: 10px;
+    }
+}
+
+
+/*==============================================================
+================================================================
+
+max-width:768px
+
+================================================================
+============================================================== */
+
+
+@media screen and (max-width:768px) {
+
+    .c-section{
+        padding: 60px 20px;
+    }
+    
+
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    header
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+    .p-header__menu{
+        display: block;
+    }
+
+    .p-header__menu--button{
+        border: none;
+        background: none;
+        font-size: 24px;
+        display: none;
+        height: 35px;
+        width: 35px;
+    }
+
+    .p-header__menu--button.on{
+        display: block;
+    }
+
+    .p-nav{
+        display: none;
+    }
+
+    .p-nav.on{
+        display: block;
+    }
+
+
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    hero
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+    .p-hero{
+        height: 700px;
+    }
+
+    .p-hero__title{
+        padding-top: 300px;
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .p-hero__subtitle{
+        font-size: 20px;
+    }
+
+
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    staff
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+    .p-staff{
+        padding-bottom: 5px;
+    }
+
+    .p-user{
+        margin: 50px auto;
+        padding: 0 15px;
+    }
+    
+    .p-user__image{
+        height: 150px;
+        width: 150px;
+    }
+    
+    .p-user__about{
+        margin-left: 40px;
+    }
+    
+    .c-text--user{
+        font-size: 18px;
+    }
+}
+
+
+/*==============================================================
+================================================================
+
+max-width:400px
+
+================================================================
+============================================================== */
+
+
+@media screen and (max-width:400px) {
+    .p-hero__title{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .p-hero__subtitle{
+        font-size: 18px;
+    }
+
+
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    staff
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+    .p-user{
+        flex-direction: column;
+    }
+
+    .p-user__about{
+        margin: 40px 0 0;
+    }
+    .p-user__image{
+        height: 110px;
+        width: 110px;
+    }
+
+    .c-text--user{
+        font-size: 16px;
+    }
+
+
+}
