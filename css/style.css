@@ -19,8 +19,16 @@ a,button{
     text-decoration: none;
 }
 
+h1,h2,h3,h4{
+    color:rgba(32, 5 ,5, .8);
+}
+
 strong{
     margin-right: 10px;
+}
+
+textarea{
+    resize: none;
 }
 
 .c-section{
@@ -41,9 +49,32 @@ strong{
     margin-bottom: 15px;
 }
 
+.c-label{
+    display: block;
+    margin: 20px 0;
+}
+
+.c-input,.c-textarea{
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.c-link:hover{
+    color: rgba(255, 103, 129, 0.8);
+    text-decoration: none;
+}
+
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 header
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
 .p-header{
     background: rgb(255 255 226 / 80%);
     color: #fff;
@@ -79,11 +110,16 @@ header
     padding: 5px 10px;
 }
 
+.p-nav__list--link:hover{
+    font-weight: bold;
+}
+
 
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 hero
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
 
 .p-hero{
     background-color: #5b5b72;
@@ -97,19 +133,25 @@ hero
 }
 
 .p-hero__title{
+    color: #fff;
     font-size: 70px;
     margin: 0 0 20px;
-    padding-top: 450px;
+    padding-top: 235px;
 }
 
 .p-hero__subtitle{
+    color: #fff;
     font-size: 50px;
 }
+
+
 
 
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 staff
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
 
 .p-user{
     display: flex;
@@ -135,19 +177,160 @@ staff
 
 
 
+
+
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 skill
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
 
 .p-skill{
     background: #fff;
     box-shadow: 0 0 5px #f4f4f4 inset;
 }
 
+.p-skill__container{
+    display: flex;
+    margin: 60px auto;
+}
 
 
 
 
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+contact
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+
+.p-contact{
+    box-shadow: 0 0 5px #fff inset;
+}
+
+.p-contact__contents{
+    margin: 80px auto;
+    max-width: 980px;
+}
+
+.p-form{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #fff;
+    padding: 40px 25%;
+}
+
+.p-form__title{
+    font-size: 22px;
+    margin: 40px 0 80px;
+    text-align: center;
+}
+
+.p-form__wrap--submit{
+    overflow: hidden;
+    text-align: right;
+}
+
+.p-form__submit{
+    background: rgba(32, 5 ,5, .8);
+    box-shadow: 0 7px 2px rgba(32, 5 ,5, .9);
+    color: white;
+    font-weight: bold;
+    margin: 40px auto 20px;
+    max-width: 200px;
+    padding: 15px 20px;
+    transition: all .5s;
+    transform: translateY(-5px);
+    width: 50%;
+}
+
+.p-form__submit:hover{
+    background: rgba(32, 5 ,5, .6);
+    box-shadow: none;
+    transition: all .5s;
+    transform:translateY(5px);
+}
+
+
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+access
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+
+
+.p-access{
+    background: #fff;
+}
+
+.p-access__container{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px auto 0;
+}
+
+.p-access__about{
+    margin-right: 20px;
+}
+
+.p-access__about--text{
+    margin-bottom: 15px;
+}
+
+.p-access__link{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #eee;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin: 20px auto;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.p-access__link--fb{
+    background: #39569c;
+}
+
+.p-access__link--fb:hover{
+    background:  rgba(57, 87, 156, 0.4);
+    color: rgba(57, 87, 156, 0.9);
+}
+
+.p-access__link--line{
+    background: #00B900;
+}
+
+.p-access__link--line:hover{
+    background:  rgba(0, 185, 0, 0.2);
+    color:  rgba(0, 185, 0);
+}
+
+.p-access__link--x{
+    background: #000;
+}
+
+.p-access__link--x:hover{
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.9);;
+}
+
+.fa-mgr{
+    margin-right: 15px;
+}
+
+.fa-x-twitter{
+    background: #fff;
+    color: #000;
+}
+
+.p-access__map--item{
+    height: 300px;
+    width: 400px;
+}
 
 
 
@@ -155,11 +338,22 @@ skill
 /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 footer
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+
 .p-footer{
     background: #181717;
     color: rgb(255 255 226 / 80%);
     padding: 5px 15px;
 }
+
+.p-footer__text{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
 
 
 /*==============================================================
@@ -247,7 +441,7 @@ max-width:768px
     }
 
     .p-hero__title{
-        padding-top: 300px;
+        padding-top: 230px;
         font-size: 30px;
         margin-bottom: 5px;
     }
@@ -282,6 +476,36 @@ max-width:768px
     .c-text--user{
         font-size: 18px;
     }
+
+
+
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    contact
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+    .p-form{
+        padding: 40px 15%;
+    }
+
+
+
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    access
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+    .p-access__container{
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .p-access__about{
+        margin: 20px 0;
+    }
+
+    .p-access__map--item{
+        width: 100%;
+    }
+
 }
 
 
@@ -295,9 +519,14 @@ max-width:400px
 
 
 @media screen and (max-width:400px) {
+    .p-hero{
+        height: 500px;
+    }
+
     .p-hero__title{
         font-size: 24px;
         margin-bottom: 5px;
+        padding-top: 140px;
     }
 
     .p-hero__subtitle{
@@ -323,6 +552,15 @@ max-width:400px
 
     .c-text--user{
         font-size: 16px;
+    }
+
+
+
+    /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    contact
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+    .p-form{
+        padding: 40px 20px;
     }
 
 
