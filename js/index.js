@@ -8,7 +8,7 @@ $(function(){
 
     // MENUのリストが開いている時、リストを押されたらボタンとMENUをトグル
     $(".js-nav-link").on("click", function(){
-        $(".js-menu-button").toggleClass("on");
-        $(".js-trigger").toggleClass("on");
+        $(".js-menu-button").find("i").toggleClass("on"); // アイコンのトグル
+        $(".js-trigger").toggleClass("on"); // navメニューのトグル
     });
 })
